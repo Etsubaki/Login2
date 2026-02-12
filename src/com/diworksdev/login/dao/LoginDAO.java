@@ -12,6 +12,7 @@ public class LoginDAO {
 		LoginDTO dto=new LoginDTO();
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
+		
 		String sql="select * from user where user_name=? and password=?";
 
 		try {
